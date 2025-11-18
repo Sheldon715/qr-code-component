@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+
   
   <title>Frontend Mentor | QR code component</title>
 
@@ -12,17 +14,28 @@
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+    body {background-color: #D5E1EF; max-height: 960px; max-width: 1440px; display: flex; min-height: 100vh; flex-direction:column; justify-content: center; align-items: center;}
+    .component { background-color: #FFFFFF; width: 320px; height: 499px; border-radius: 20px;}
+    .qrcode {height: 288px; width: 288px; border-radius: 10px; margin: 16px;}
+    .preset {height: 131px; width: 288px; margin: 16px; margin-bottom: 40px; margin-top: 8px;}
+    .preset1 {text-align: center; font-weight: bold; font-family: "Outfit", sans-serif; color: #1F314F; letter-spacing: 0px; font-size: 22px; margin: 0px;}
+    .preset2 {text-align: center; font-weight: regular;font-family: "Outfit", sans-serif; color: #68778D; letter-spacing: 0.2px; font-size: 15px;}
+
   </style>
 </head>
 <body>
+  <div class="component">
+    <img class="qrcode" src="./images/image-qr-code.png" alt="qr code"/>
 
-  Improve your front-end skills by building projects
-
-  Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+    <div class="preset">
+      <p class="preset1">Improve your front-end skills by building projects</p>
+      <p class="preset2">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+    </div>
+  </div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Sheldon Liu</a>.
   </div>
 </body>
 </html>
